@@ -1,0 +1,11 @@
+{
+  "SIGN_IN_USER_NOT_FOUND": "No user found with login credentials provided.",
+  "SIGN_IN_INVALID_PASSWORD": "Invalid password.",
+  "SIGN_IN_USER_DISABLED": "User has been Disabled.",
+  "REGISTER_SUCCESS": "User Created Successfully.",
+  "REFRESH_TOKEN_ERROR": "Token as Expired.",
+  "RESET_PASSWORD_SUCCESS": "New Password Activation Link Sent to your Email.",
+  "NEW_PASSWORD_INPUT_ERROR": "User Password Changed Successfully.",
+  "NEW_PASSWORD_SUCCESS": "User Password Changed Successfully.",
+  "SUBSCRIBER_TEST_POST": "SUBSCRIBER_TEST_POST"
+}

@@ -1,0 +1,52 @@
+{
+  "name": "graphql-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "start:dev": "ts-node-dev --respawn --transpileOnly ./index.ts",
+    "start:prod": "tsc && node ./build/index.js",
+    "key-gen": "ssh-keygen -t rsa -P \"\" -b 4096 -m PEM -f jwtRS256.key && ssh-keygen -e -m PEM -f jwtRS256.key > jwtRS256.key.pub && mv jwtRS256.key keys/private.key && mv jwtRS256.key.pub ./keys/public.key",
+    "key-gen-win": "ssh-keygen -t rsa -P \"\" -b 4096 -m PEM -f jwtRS256.key && ssh-keygen -e -m PEM -f jwtRS256.key > jwtRS256.key.pub && move jwtRS256.key keys/private.key && move jwtRS256.key.pub ./keys/public.key"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/cryptr": "^4.0.0",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^4.17.1",
+    "@types/graphql": "^14.5.0",
+    "@types/graphql-resolvers": "^0.2.2",
+    "@types/helmet": "0.0.44",
+    "@types/jsonwebtoken": "^8.3.4"
+  },
+  "dependencies": {
+    "@graphql-modules/core": "^0.7.13",
+    "@sendgrid/mail": "^6.4.0",
+    "apollo-server": "^2.9.6",
+    "apollo-server-express": "^2.9.6",
+    "bcrypt": "^3.0.6",
+    "cryptr": "^4.0.2",
+    "dotenv": "^8.1.0",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.8",
+    "graphql-import": "^0.7.1",
+    "graphql-import-node": "^0.0.4",
+    "graphql-resolvers": "^0.3.3",
+    "graphql-subscriptions": "^1.1.0",
+    "graphql-tools": "^4.0.5",
+    "graphql-type-json": "^0.3.0",
+    "helmet": "^3.21.1",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^7.12.1",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^5.19.6",
+    "sequelize-typescript": "^1.0.0",
+    "ts-node-dev": "^1.0.0-pre.43",
+    "typescript": "^3.6.4",
+    "unique-string": "^2.0.0",
+    "utility": "^1.16.1"
+  }
+}
